@@ -1,27 +1,33 @@
-# SignatureLibrary
+# ra-signature
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
+ra-signature is a library work use to add a customized signature pad in your angular app  
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Use the package manager ### npm to install ra-signature.
 
-## Code scaffolding
+```bash
+npm i ra-signature
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usage
+in your app module
+```typescript
+import {RaSignatureModule} from 'ra-signature';
+```
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+and in your component.html add
+```html
+<ra-signature [height]="200" [width]="200" [strokeColor]="'#f3f3f3'" (imageEvent)="receiveImage($event)" ></ra-signature>
 
-## Running unit tests
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+and in your component.ts add
+```typescript
+image:string="";
+receiveImage($event) {
+    this.image = $event
+  }
+```
+ [link to npm package](https://www.npmjs.com/package/ra-signature)
