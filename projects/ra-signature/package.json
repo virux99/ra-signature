@@ -1,0 +1,18 @@
+{
+  "name": "ra-signature",
+  "version": "0.0.2",
+  "peerDependencies": {
+    "@angular/common": "^9.1.12",
+    "@angular/core": "^9.1.12"
+  },
+  "dependencies": {
+    "tslib": "^1.10.0"
+  },
+  "description": "this is a working angular package for signature pad to get the signature in base64",
+  "author": {
+    "name": "junaid",
+    "url": "https://github.com/virux99",
+    "email": "junaid.m9999@gmail.com"
+  },
+  "keywords": ["angular-signature", "signature", "signature-pad", "angular-signature-pad", "angular"]
+}
